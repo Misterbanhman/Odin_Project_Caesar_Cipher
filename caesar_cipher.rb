@@ -2,6 +2,7 @@ require 'pry-byebug'
 
 
 def caesar_cipher(string,number)
+    number = number % 26
     new_array = []
     convert_string = string.split('')
     convert_string.each do |letter|
@@ -44,4 +45,4 @@ def check_uppercase(letter)
     end
 end
 
-caesar_cipher("What a string!", 5)
+caesar_cipher("What a string!", 31)
